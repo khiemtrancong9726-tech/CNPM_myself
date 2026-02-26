@@ -78,22 +78,30 @@ Hệ thống được phân quyền rõ ràng giữa:
 - 🛠️ **Công cụ phát triển:** VS Code, Git
 
 ---
+
 ## 🔑 Tài khoản Mặc định
 
 Ngay sau khi khởi chạy lần đầu, bạn có thể đăng nhập bằng tài khoản Admin quản trị:
 
-Vai trò	Username	Password
-Admin (Librarian)	admin	123456
+| Vai trò | Username | Password |
+|---------|----------|----------|
+| **Admin (Librarian)** | `admin` | `123456` |
 
-📌 Lưu ý: Member không có sẵn. Người dùng tự tạo tài khoản mới.
+> 📌 Lưu ý: Member không có sẵn. Người dùng cần tự đăng ký tài khoản mới.
+
+---
+
+## 📂 Cấu trúc dự án
+
+```bash
 LIBRARY-MANAGEMENT-SYSTEM/
 │
 ├── SourceCode/
-│   ├── controllers/      # Xử lý logic nghiệp vụ (Business Logic)
-│   ├── models/           # Định nghĩa dữ liệu (Model)
-│   ├── data.json         # Dữ liệu JSON (File-based storage)
-│   ├── utils.py          # Các tiện ích (Helper)
-│   └── main.py           # Entry point của hệ thống
+│   ├── controllers/        # Xử lý logic nghiệp vụ (Business Logic)
+│   ├── models/             # Định nghĩa cấu trúc dữ liệu (Model)
+│   ├── data.json           # Dữ liệu JSON (File-based storage)
+│   ├── utils.py            # Các tiện ích (Helper)
+│   └── main.py             # Entry point của hệ thống
 │
-├── Dockerfile            # Cấu hình Docker
-└── README.md             # Hướng dẫn sử dụng
+├── Dockerfile              # Cấu hình Docker
+└── README.md               # Hướng dẫn sử dụng
